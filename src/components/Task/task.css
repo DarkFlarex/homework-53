@@ -1,0 +1,16 @@
+.task{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.button-task{
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
