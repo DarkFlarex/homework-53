@@ -1,15 +1,24 @@
+body{
+  margin: 0;
+  background-color: #5483B3;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
 }
+
 .App{
   display: flex;
-  justify-content: center;
-  border: 1px solid black;
-
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 8px #021024;
+  min-height: 100vh;
+  background-color: #7DA0CA;
 }
+
 .task-list{
   display: flex;
   flex-direction: column;

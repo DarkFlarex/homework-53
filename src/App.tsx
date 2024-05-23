@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AddTaskForm  from "./components/AddTaskForm/AddTaskForm";
 import Task from './components/Task/Task';
 import './App.css';
 
@@ -20,8 +21,15 @@ const App = () => {
         });
     };
 
+    const createTask = (newTask:Task) => {
+        setTasks(prevTasks => [...prevTasks, newTask ]);
+    };
+
     return (
         <div className="App">
+            <AddTaskForm onSubmit={createTask}
+            />
+
             <div className={"task-list"}>
                 {tasks.map(task => (
                     <Task
